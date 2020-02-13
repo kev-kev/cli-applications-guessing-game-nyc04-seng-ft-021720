@@ -18,11 +18,12 @@ def run_guessing_game
   unless user_input == answer
   
     if user_input == "exit"
-      puts "Goodbye!"
-      return
-  elsif user_input == answer
+        puts "Goodbye!"
+        return
+    else
+        puts "Sorry! The computer guessed #{answer}."
+    end
+  else 
     p "You guessed the correct number!"
-  else
-    puts "Sorry! The computer guessed #{answer}."
   end
 end
