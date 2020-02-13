@@ -14,14 +14,14 @@ end
 def run_guessing_game
   answer = get_rand_num
   prompt_user
-  get_user_input
-  if get_user_input == "exit"
+  user_input = get_user_input
+  if user_input == "exit"
     puts "Goodbye!"
     return
-  elsif get_user_input != (1...6)
+  elsif user_input != (1...6)
     prompt_user
     get_user_input
-  elsif get_user_input == answer
+  elsif user_input == answer
     puts "You guessed the correct number!"
   else
     puts "Sorry! The computer guessed #{answer}."
