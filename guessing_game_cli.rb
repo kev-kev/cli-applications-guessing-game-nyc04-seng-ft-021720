@@ -18,7 +18,7 @@ def run_guessing_game
   if get_user_input == "exit"
     puts "Goodbye!"
     return
-  elsif get_user_input != (1...6)
+  elsif get_user_input != ranges(1...6)
     prompt_user
     get_user_input
   elsif get_user_input == answer
