@@ -15,6 +15,8 @@ def run_guessing_game
   answer = get_rand_num
   prompt_user
   user_input = get_user_input
+  p answer
+  p user_input
   if user_input == answer
     puts "You guessed the correct number!"
   elsif user_input == "exit"
