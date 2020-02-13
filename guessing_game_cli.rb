@@ -18,9 +18,6 @@ def run_guessing_game
   if user_input == "exit"
     puts "Goodbye!"
     return
-  elsif user_input != (1...6)
-    prompt_user
-    get_user_input
   elsif user_input == answer
     puts "You guessed the correct number!"
   else
