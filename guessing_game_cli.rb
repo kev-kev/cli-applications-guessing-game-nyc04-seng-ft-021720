@@ -22,4 +22,5 @@ def run_guessing_game
     return
   else
     puts "Sorry! The computer guessed #{answer}."
+  end
 end 
