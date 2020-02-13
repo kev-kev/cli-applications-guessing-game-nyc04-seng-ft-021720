@@ -15,8 +15,6 @@ def run_guessing_game
   answer = get_rand_num
   prompt_user
   user_input = get_user_input
-  unless user_input == answer
-  
     if user_input == "exit"
         puts "Goodbye!"
         return
