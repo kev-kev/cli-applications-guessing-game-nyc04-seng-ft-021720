@@ -15,5 +15,15 @@ def run_guessing_game
   answer = get_rand_num
   prompt_user
   get_user_input
-  if get_user_input != Number
+  if get_user_input == "exit"
+    puts "Goodbye!"
+    return
+  elsif get_user_input != (1...6)
+    prompt_user
+    get_user_input
+  elsif get_user_input == answer
+    puts "You guessed the correct number!"
+  else
+    puts "Sorry! The computer guessed #{answer}."
+  end
 end
