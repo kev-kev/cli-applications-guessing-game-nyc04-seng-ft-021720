@@ -17,7 +17,7 @@ def run_guessing_game
   user_input = get_user_input
   p answer
   p user_input
-  if user_input == answer
+  if user_input.to_i == answer
     puts "You guessed the correct number!"
   elsif user_input == "exit"
     puts "Goodbye!"
